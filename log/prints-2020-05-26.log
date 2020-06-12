@@ -1,0 +1,7 @@
+14:48:41.885 [main] DEBUG resources.Base - User clicked on default pop up as No Thanks
+14:48:47.363 [main] DEBUG resources.Base - Check whether user navigated to Login page
+14:48:47.991 [main] DEBUG resources.Base - Accepted username
+14:48:48.321 [main] DEBUG resources.Base - Entered password
+14:48:49.188 [main] DEBUG resources.Base - Check whether user logged in or not
+15:03:35.395 [main] DEBUG resources.Base - driver is initialized
+15:03:44.202 [main] DEBUG resources.Base - Navigated to Home page

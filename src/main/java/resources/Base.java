@@ -1,19 +1,23 @@
 package resources;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.io.FileHandler;
 
 public class Base {
 	
 	public static WebDriver driver;
-	public Properties prop;
+	public static Properties prop;
 	
 	public WebDriver initializeDriver() throws IOException
 	{
@@ -24,7 +28,8 @@ public class Base {
 		
 		if(browsername.equals("chrome"))
 		{
-			System.setProperty("WebDriver.firefox.driver", "C:\\Users\\arnip\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+			
+			//System.setProperty("WebDriver.firefox.driver", "C:\\Users\\arnip\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
 			driver = new ChromeDriver();
 			
 		}
@@ -43,5 +48,11 @@ public class Base {
 		
 	}
 	
+		public void getScreenshot(String testCaseName) throws IOException
+		{	TakesScreenshot ts= (TakesScreenshot)driver;
+			File src = ts.getScreenshotAs(OutputType.FILE);
+			String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
+			FileHandler.copy(src, new File(destinationFile));
+		}
 
 }

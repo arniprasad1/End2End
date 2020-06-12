@@ -10,6 +10,12 @@
   <name>End2EndProject</name>
   <url>http://maven.apache.org</url>
 <build>
+<resources>
+	<resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+</resources>
 	<plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -63,6 +69,25 @@
     <version>4.1.0</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/jexcelapi/jxl -->
+<dependency>
+    <groupId>jexcelapi</groupId>
+    <artifactId>jxl</artifactId>
+    <version>2.4.2</version>
+</dependency>
+
+
+<dependency>
+
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.13.3</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.13.3</version>
+  </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

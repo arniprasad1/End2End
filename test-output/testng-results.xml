@@ -1,25 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59607" started-at="2020-05-19T08:51:50 CDT" finished-at="2020-05-19T08:52:50 CDT">
+  <suite name="Default suite" duration-ms="107142" started-at="2020-06-11T23:27:11 CDT" finished-at="2020-06-11T23:28:58 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59607" started-at="2020-05-19T08:51:50 CDT" finished-at="2020-05-19T08:52:50 CDT">
-      <class name="Sample.End2EndProject.validationTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Sample.End2EndProject.validationTest@711f39f9]" name="initialize" is-config="true" duration-ms="33871" started-at="2020-05-19T08:51:50 CDT" finished-at="2020-05-19T08:52:24 CDT">
+    <test name="Default test" duration-ms="107142" started-at="2020-06-11T23:27:11 CDT" finished-at="2020-06-11T23:28:58 CDT">
+      <class name="Sample.End2EndProject.HomePageTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Sample.End2EndProject.HomePageTest@489115ef]" name="initialize" is-config="true" duration-ms="13046" started-at="2020-06-11T23:27:11 CDT" finished-at="2020-06-11T23:27:24 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="ValidateHomePage()[pri:0, instance:Sample.End2EndProject.validationTest@711f39f9]" name="ValidateHomePage" duration-ms="18531" started-at="2020-05-19T08:52:24 CDT" finished-at="2020-05-19T08:52:43 CDT">
+        <test-method status="PASS" signature="ValidateHomePage()[pri:0, instance:Sample.End2EndProject.HomePageTest@489115ef]" name="ValidateHomePage" duration-ms="19661" started-at="2020-06-11T23:27:24 CDT" finished-at="2020-06-11T23:27:43 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateHomePage -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:Sample.End2EndProject.validationTest@711f39f9]" name="teardown" is-config="true" duration-ms="7122" started-at="2020-05-19T08:52:43 CDT" finished-at="2020-05-19T08:52:50 CDT">
+        <test-method status="PASS" signature="ValidateLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Sample.End2EndProject.HomePageTest@489115ef]" name="ValidateLogin" duration-ms="29005" started-at="2020-06-11T23:27:55 CDT" data-provider="LoginTest1" finished-at="2020-06-11T23:28:24 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ananthaarni@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLogin -->
+        <test-method status="PASS" signature="ValidateLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Sample.End2EndProject.HomePageTest@489115ef]" name="ValidateLogin" duration-ms="28310" started-at="2020-06-11T23:28:24 CDT" data-provider="LoginTest1" finished-at="2020-06-11T23:28:53 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arniprasad1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLogin -->
+        <test-method status="PASS" signature="ValidateLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Sample.End2EndProject.HomePageTest@489115ef]" name="ValidateLogin" duration-ms="3" started-at="2020-06-11T23:28:53 CDT" data-provider="LoginTest1" finished-at="2020-06-11T23:28:53 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abcd@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLogin -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Sample.End2EndProject.HomePageTest@489115ef]" name="teardown" is-config="true" duration-ms="5019" started-at="2020-06-11T23:28:53 CDT" finished-at="2020-06-11T23:28:58 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Sample.End2EndProject.validationTest -->
+      </class> <!-- Sample.End2EndProject.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
